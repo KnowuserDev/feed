@@ -37,6 +37,9 @@ export default (ins: Feed) => {
     if (options.author.link) {
       feed.author.url = options.author.link;
     }
+    if (options.author.avatar) {
+      feed.author.avatar = options.author.avatar;
+    }
   }
 
   extensions.map((e: Extension) => {
